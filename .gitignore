@@ -1,0 +1,60 @@
+# --- Environnements Virtuels ---
+venv/
+.venv/
+env/
+bin/
+lib/
+share/
+Include/
+
+# --- Données et Datasets ---
+# On ignore les dossiers de données car ils sont trop volumineux pour Git
+data/
+datasets/
+raw_data/
+processed_data/
+*.zip
+*.tar.gz
+*.rar
+
+# --- Modèles et Poids ---
+# On ignore les fichiers de sauvegarde de modèles
+models/
+checkpoint/
+weights/
+*.h5
+*.hdf5
+*.pth
+*.pt
+*.onnx
+*.pb
+*.tflite
+
+# --- Logs et Visualisation ---
+logs/
+runs/
+.tensorboard/
+*.log
+
+# --- Python & Cache ---
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.ipynb_checkpoints/
+
+# --- Système & IDE ---
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+
+# --- Sorties de prédiction ---
+output/
+results/
+predictions/
+*.mp4
+*.avi
+#*.jpg
+#*.png

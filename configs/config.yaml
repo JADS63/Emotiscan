@@ -1,0 +1,48 @@
+data:
+  aug_affine_scale:
+  - 0.9
+  - 1.1
+  aug_color_jitter: 0.2
+  aug_random_erasing: 0.15
+  aug_rotation_deg: 15
+  channels: 1
+  class_names:
+  - anger
+  - disgust
+  - fear
+  - happy
+  - neutral
+  - sad
+  - surprise
+  hflip_p: 0.5
+  img_height: 96
+  img_width: 96
+  mean: 0.4544
+  num_classes: 7
+  std: 0.2658
+  test_dir: data/Test
+  train_dir: data/Train
+model:
+  dropout: 0.3
+  name: resnet18
+  pretrained: true
+  freeze_layers: 0
+  hidden_size: 0
+project:
+  name: EmotiScan
+  seed: 42
+  version: 2.0.0
+train:
+  batch_size: 32
+  device: auto
+  early_stopping_patience: 15
+  epochs: 80
+  label_smoothing: 0.1
+  learning_rate: 0.0026560226146717255
+  num_workers: 0
+  optimizer: adamw
+  scheduler: cosine
+  tune_early_stopping_patience: 2
+  tune_epochs: 5
+  tune_trials: 20
+  weight_decay: 3.321564497871925e-05

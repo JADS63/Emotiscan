@@ -1,0 +1,1 @@
+"""EmotiScan Streamlit App Package."""
